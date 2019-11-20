@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>To-Do List | COMP1073 Client-Side JavaScript</title>
+	<!--References for fonts, css, and JavaScript -->
+	<link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
+	<link href="main.css" rel="stylesheet">
+	<script src="main.js" async></script>
+</head>
+
+<body>
+  <div class="wrapper">
+  <header>
+	  <h1>EVERYDAY TO-DO LIST</h1>
+		<!--Takes the input from the user for functions in the main.js file -->
+    <input type="text" id="userInput" placeholder="Enter a To-Do!">
+		<!--When the Add to List button is clicked, the function newItem in main.js is used -->
+    <button onclick="newItem()">Add To List</button>
+  </header>
+  <main>
+		<!--Unordered list to hold the todo list items-->
+    <ul id="todoList">
+    </ul>
+  </main>
+  <footer>
+    <p>By Mason Ferrie</p>
+  </footer>
+  </div><!--end wrapper-->
+	</body>
+</html>
